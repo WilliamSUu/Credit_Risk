@@ -1,0 +1,21 @@
+# 复制本文件为 config.yaml，然后改成本机数据路径。
+data_dir: "/absolute/path/to/home-credit-default-risk"
+history_data_dir: "/absolute/path/to/archive"
+
+# 模型和图表的本地输出目录。
+output_dir: "outputs"
+
+# 固定验证配置，保证多轮实验共享相同的数据划分。
+validation_size: 0.20
+random_state: 42
+cross_validation_folds: 5
+
+# 当前正式冠军：XGBoost + Application + Bureau + Previous + Installments。
+champion_model: "xgboost"
+champion_feature_set: "application_bureau_previous_installments"
+xgboost_cv_n_estimators: 849
+
+# 初期基线阈值分析使用的概率网格。
+threshold_min: 0.05
+threshold_max: 0.50
+threshold_step: 0.01

@@ -1,0 +1,18 @@
+# Python runtime and local environment
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+
+# Local source data is not committed to the repository
+data/
+*.csv
+config.yaml
+
+# Generated experiment outputs
+outputs/
+*.joblib
+*.pkl
+*.log
+.DS_Store

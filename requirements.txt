@@ -1,0 +1,16 @@
+# Tabular data loading and transformation
+pandas>=2.0,<3.0
+numpy>=1.24,<3.0
+
+# Baseline model and evaluation
+scikit-learn>=1.3,<2.0
+scipy>=1.10,<2.0
+xgboost>=2.0,<4.0
+shap>=0.45,<1.0
+
+# Static plots for validation and interpretation
+matplotlib>=3.7,<4.0
+seaborn>=0.12,<1.0
+
+# Small configuration file reader
+PyYAML>=6.0,<7.0
